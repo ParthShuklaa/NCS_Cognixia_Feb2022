@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementing Table in HTML5</title>
+    <style>
+        table tr th,
+        table tr td {
+            padding: 10px;
+            border-style: double;
+            border: 1px solid brown;
+            border-radius: 10Px;
+            border-collapse: collapse;
+            width: 100px;
+            text-align: left;
+        }
+        
+        tr:nth-child(even) {
+            background-color: crimson;
+        }
+        
+        tr:hover {
+            background-color: darkslategrey
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>The Beatles </caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Instrument</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+
+                <th>Name</th>
+                <th>Instrument</th>
+            </tr>
+        </tfoot>
+        <tr>
+            <td>John Lenon </td>
+            <td>Rhythm Guitar</td>
+        </tr>
+        <tr>
+            <td>paul Macartney</td>
+            <td>Bass</td>
+        </tr>
+        <tr>
+            <td>George</td>
+            <td>Lead Guita</td>
+
+        </tr>
+        <tr>
+            <td>Ringo Starr</td>
+            <td>Drums</td>
+        </tr>
+    </table>
+</body>
+
+</html>

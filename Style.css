@@ -1,0 +1,17 @@
+body {
+    background-color: powderblue;
+}
+
+h1 {
+    color: blue;
+    text-decoration: chocolate;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10%;
+}
+
+p {
+    color: darkgreen;
+    font-family: cursive;
+    font-size: small;
+}
