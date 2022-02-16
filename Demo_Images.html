@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working With Images in HTML</title>
+    <!-- <style>
+        p {
+            background-image: url('Images/860_AI_gaming.png');
+        }
+    </style> -->
+
+</head>
+
+<body>
+    <picture>
+        <source media="(min-width:650px)" srcset="Images/860_AI_gaming.png">
+        <source media="(min-width:450px" srcset="Images/Art_Maths.gif">
+        <img src="Images/images (6).jpg" width=":auto">
+    </picture>
+    <!-- <img src="Images/Art_Maths.gif" alt="Maths_Art_Background" usemap="#MyImageMap" width="400" height="350" style="float: right;"> -->
+    <!-- <img src="Images/images (6).jpg" alt="Sample Image" width="400" height="350" style="float: left;"> -->
+    <p style="background-image: url('Images/860_AI_gaming.png'); height: auto; width: auto;"></p>
+
+    <p>Follwing image is Clickable </p>
+
+    <!-- <map name="MyImageMap">
+        <!-- <area shape="rect" coords="30,40,250,350" alt="Computer Gaming" href="Google.com"> -->
+    <area shape="circle" coords="350,300,50" alt="Computer Gaming Default " href="gmail.com">
+    </map> -->
+</body>
+
+</html>

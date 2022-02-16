@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> HTML FORMS</h2>
+
+    <form action=" " target="_blank" method="post">
+
+
+        <label for="Firstname">First Name </label>
+        <input type="text" id="FName" name="Fname" value="Enter Your name" required>
+        <br>
+        <label for="Last name">Last Name </label>
+        <input type="text" id="Lname" name="Lname" value="Enter Your Last name">
+        <br>
+        <label for="Email"></label>
+        <input type="email" id="email" name="email">
+        <br>
+        <input type="search" id="search" name="search">
+        <label for="Phone">Enter Your Phone No</label>
+        <input type="tel" id="Phone" name="Phone" pattern="[0-9]10" disabled>
+
+
+
+        <!-- <input type="hidden" id="CustID" name="CustID" value="12345">
+        <p> Choosse Your Favourite Langauge</p> -->
+        <input type="radio" id="HTML" name="Fav Language" value="HTML">
+        <label for=" HTML">HTML</label> <br>
+        <input type="radio" id="CSS" name="Fav Language" value="CSS">
+        <label for="CSS">CSS</label> <br>
+        <br>
+        <label for="cars">Choose a Car</label>
+        <select id="cars" name="cars" size="1" multiple>
+            <option value="Audi">AudiQ7</option>
+            <option value="Tesla" selected>Tesla</option>
+            <option value="Bugatti">Bugatti</option>
+        </select> <br>
+        <br>
+        <textarea name="message" rows="10" cols="25">
+                tell us Something about Your self
+                </textarea>
+
+
+
+    </form>
+    <button type="submit" value="ClickMe" onclick="alert('Hi Every One !! ')">
+       Click Me .... </button>
+    <input type="reset">
+    <INPut type="Datetime-LOcal">
+    <input type="Date">
+    </form>
+</body>
+
+</html>
