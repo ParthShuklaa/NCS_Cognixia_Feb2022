@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+</head>
+
+<body>
+    <p>Listing/Finding all the Elements by Query Selector(CSS) </p>
+    <p class="intro"> Hi Every One ....</p>
+    <p class="intro"> This is a demo for Explaining <b>Query Selector </b> Method </p>
+    <p> I Hope every One Is Learning Something new in Web Development....... </p>
+
+    <h1 class="intro">This is a Heading with Same Class </h1>
+
+    <p id="demo"></p>
+
+    <script>
+        const x = document.querySelectorAll("intro");
+        document.getElementById("demo").innerHTML =
+            'The Second Paragraph that starts with Class Intro is :' + x[0].innerHTML;
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="Introduction"> JavaScript HTML DOM</p>
+    <h1 class="Introduction">Lets see How to Access an element by providing a Class </h1>
+
+    <p> Hello World ...</p>
+
+    <p id="demo"> </p>
+    <h2 id="demo1"> </h2>
+    <h3>This is My Headig 3 tag.....</h3>
+
+    <script>
+        const element = document.getElementsByTagName("h3");
+        const x = document.getElementsByClassName("Introduction");
+        document.getElementById("demo").innerHTML =
+            'This first paragraph with class  = "Introduction" is ' + x[1].innerHTML;
+
+        document.getElementById("demo1").innerHTML =
+            ' The text in the First Pragraph (index 0) is : ' + element[0].innerHTML;
+    </script>
+</body>
+
+</html>
