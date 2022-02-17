@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<div>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" style=" background-color: brown; width: 120px;height: 30Px; padding: 40px;">
+        Check By Moving Mouse Cursor Over here...
+    </div>
+
+    <script>
+        function mOver(myobj) {
+            myobj.innerHTML = "Thank \You"
+        }
+
+        function mOut(myobj) {
+            myobj.innerHTML = "Mouse Over Me"
+        }
+    </script>
+</body>
+
+</html>

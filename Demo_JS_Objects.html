@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects </title>
+</head>
+
+<body>
+    <h2> This is how we can declare Javascript Object in Key/Value pair</h2>
+    <p id="Demo"> </p>`
+    <h1 id="Demo1"></h1>
+    <!-- <h2 id="Demo2"></h2> -->
+    <p id="Demo2"></p>
+
+    <script>
+        const car = {
+            type: "Fiat",
+            model: "900",
+            color: "White",
+            cost: 500000,
+            torque_radius: 20.04,
+            car_start: function() {
+                return this.type + "  " + this.color;
+            },
+            car_Details: function() {
+                return this.type + " " + this.model + " " + this.color + " " + this.cost + "" + this.torque_radius;
+            }
+        };
+        document.getElementById("Demo").innerHTML = "The car type is  " + car.type;
+        document.getElementById("Demo1").innerHTML = " The Car Model is " + car.model + "The Cost is " + car.cost;
+        document.getElementById("Demo2").innerHTML = "The Car start() gives you " + car.car_start();
+        //document.getElementById("Demo2").innerHTML = " Displaying car_Start Function" + car.car_start;
+        //Objectname.PropertyName
+        //ObjectName["PropertyName"]
+    </script>
+</body>
+
+</html>

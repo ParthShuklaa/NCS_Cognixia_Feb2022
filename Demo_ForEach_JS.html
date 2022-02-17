@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> JavaScript Array for Each demo </h1>
+    <p id="demo"></p>
+
+    <script>
+        const number = [10, 20, 30, 40, 50]; //scope is within the block, can't be updated, can't be decalred without initilization 
+        let txt = 0; //Scope is within the block, can be updated, can be declared without initilization
+        var name; //functional scope, can be upated redeclared into scope, default value is undefined 
+        number.forEach(myFunction);
+        document.getElementById("demo").innerHTML = txt;
+
+        function myFunction(Value, index, array) {
+            txt += Value + "<br>";
+        }
+    </script>
+
+
+</body>
+
+</html>
