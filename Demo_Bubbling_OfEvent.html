@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling of Event</title>
+</head>
+
+<body>
+    <h2>Bubbling of Event usin JavaScript </h2>
+    <div id="parent">
+        <button>
+            <h3> Parent Button </h3>
+        </button>
+        <button id="child">
+            <p> Child</p>
+        </button>
+    </div>
+
+    <script>
+        document.getElementById("child").addEventListener("click", function() {
+            alert("You Clicked the Child Element!!");
+        }, false);
+
+        document.getElementById("parent").addEventListener("click", function() {
+            alert("You clicked the parent Element!!");
+        }, false);
+    </script>
+</body>
+
+</html>
