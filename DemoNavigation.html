@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="demo">DOM in JavaScript..</title>
+</head>
+
+<body id="body1" name="Body">
+    <h1 id="id01" name="Heading1">Understanding about Navigatio in JS/HTML DOM</h1>
+    <p id="p01"> Displaying Document.Body </p>
+    <!-- <div id="div1">
+        <p id="id02"> I am the First Child to My Div parent </p>
+        <h1> This is the second child ----</h1>
+        <p id="id03"> I am the third Child to my Div parent </p>
+    </div> -->
+    <p>---------------------------------------------------------</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+</body>
+
+<script>
+    document.getElementById("demo1").innerHTML =
+        document.getElementById("p01").childNodes[0].nodeValue;
+    // document.getElementById("demo1").innerHTML =
+    //     document.documentElement.innerHTML;
+    // document.getElementById("demo2").innerHTML =
+    //     document.getElementById("id02").nodeType;
+    // We are displaying Node type value
+</script>
+
+</html>

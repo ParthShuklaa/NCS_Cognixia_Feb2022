@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> JavaScript DOM - Adding a New Element In Between </h2>
+    <p> Hi EveryOne ...</p>
+    <div id="div1">
+        <p id="p1">Rules for learning Programming </p>
+        <p id="p2">1. Never Copy Code In anay Scenario, What So Ever .!!!</p>
+    </div>
+    <script>
+        const para = document.createElement("p");
+        const node = document.createTextNode("Think interms of Solution not the problem");
+        para.appendChild(node);
+
+        const element = document.getElementById("div1");
+        const child = document.getElementById("p2");
+        //para.append('child');//Adding text using Append()
+        console.log(para.textContent)
+            //element.insertBefore(para, child); //Now para will be the first child node of Div1
+    </script>
+</body>
+
+</html>

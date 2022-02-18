@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> let see how Append Work in JS HTML DOM</h1>
+    <div id="mydiv">
+        <ul id="app">
+            <li>JavaScript</li>
+        </ul>
+    </div>
+    <script>
+        let app = document.querySelector('#app');
+        let langs = ['Typescript', 'HTML', 'CSS'];
+        let nodes = langs.map(lang => {
+            let li = document.createElement('li');
+            li.textContent = lang;
+            return li;
+        });
+        app.append(...nodes);
+        //-----------------------------------Second Scenario for implementing append()------//
+        let x = document.querySelector('#mydiv')
+        x.append('This text is added to div with id mydiv using Append()');
+        console.log(x.textContent);
+    </script>
+
+
+</body>
+
+</html>

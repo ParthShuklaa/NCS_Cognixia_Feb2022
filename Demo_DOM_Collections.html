@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>
+        Mastering HTMl JS DOM
+    </h2>
+
+    <p>Rules of learning Quickly </p>
+    <p>Visualising it with different scenarios .!!!</p>
+    <p>Practising it for atleast 20hrs..... </p>
+
+    <button onclick="myfunction()"> See how all DOM objects are traversed </button>
+
+    <script>
+        function myfunction() {
+            const mycollection = document.getElementsByTagName("p");
+            for (let i = 0; i < mycollection.length; i++) {
+                mycollection[i].style.color = "red";
+            }
+
+        } //Above Collection is not an Array as push(), pop() or Join() methods are not applicable on them.
+    </script>
+</body>
+
+</html>

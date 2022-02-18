@@ -69,7 +69,7 @@
         });
 
         parent.addEventListener("click", (e) => {
-            e.stopPropagation();
+            e.stopPropagation(); //for stopping bubbling/capturing of event 
             console.log("Parent triggered");
         }, {
             capture: true
