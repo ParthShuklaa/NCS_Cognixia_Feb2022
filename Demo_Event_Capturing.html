@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: larger;
+        }
+        
+        h2 {
+            color: brown;
+        }
+        
+        #grandparent {
+            background-color: navy;
+            width: 400px;
+            height: 400px;
+        }
+        
+        #parent {
+            background-color: blue;
+            width: 250px;
+            height: 250px;
+        }
+        
+        #child {
+            background-color: #90E0EF;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>
+            Welcome to the Event Capturing Demo
+        </h2>
+        <div id="grandparent">Grandparent
+            <div id="parent">Parent
+                <div id="child">Child
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // Step1 : Getting the ID of Each Element 
+        // Step2 : Adding Event Listener
+
+        const grandParent = document.getElementById("grandparent");
+        const parent = document.getElementById("parent");
+        const child = document.getElementById("child");
+
+        grandParent.addEventListener("click", (e) => {
+            console.log("GrandParent triggered..!!");
+        }, {
+            capture: true
+        });
+
+        parent.addEventListener("click", (e) => {
+            e.stopPropagation();
+            console.log("Parent triggered");
+        }, {
+            capture: true
+        });
+
+        child.addEventListener("click", (e) => {
+            console.log("Child triggered");
+        }, {
+            capture: true
+        });
+    </script>
+
+
+</body>
+
+</html>
