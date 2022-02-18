@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> JavaScript HTML DOM </h2>
+    <p> Finding HTML Elements using <b>Document.forms</b></p>
+
+    <form id="myform" action="/google.com">
+        First name : <input type="text" name="fname" value="Tony"> <br> Last name : <input type="text" name="lname" value="Stark"> <br> <br>
+        <input type="submit" value="Click here..!!"> </form>
+
+    <h1> lets check what all objects are there in my Form</h1>
+    <p id="demo"></p>
+    <p id="demo1"> Here will come First element of object collection</p>
+
+    <script>
+        const x = document.forms["myform"];
+
+        let text = " ";
+        // What if, if we just want to Display only the first element 
+        document.getElementById("demo1").innerHTML = x.elements[0].value;
+        for (let i = 0; i < x.length; i++) {
+            text += x.elements[i].value + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+
+</html>

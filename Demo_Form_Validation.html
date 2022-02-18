@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavScript Form </title>
+    <script>
+        function validateForm() {
+            let x = document.forms["loginform"]["username"].value;
+            if (x == "") {
+                alert("You name can't be blank...  !!!");
+                return false;
+            }
+        }
+
+        function checkNumber() {
+            let x = document.getElementById("num").value;
+            let text;
+            if (isNaN(x) || x < 1 || x > 100) {
+                text = "Input Age is should be inrange of 1-100";
+            } else {
+                text = "Input is OK";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</head>
+
+<body>
+    <h2> Java Script Form validation</h2>
+
+    <form name="loginform" action="https://www.google.com/" method="post">
+        Name: <br>
+        <input type="text" name="username" required>
+        <br> Password: <br>
+        <input type="password" name="password" required>
+        <br> Enter Your Age
+        <input type="number" name="age" id="num" onkeydown="checkNumber()"> <br>
+        <input type="submit" value="Login "><br>
+        <!-- <button type="button " onclick="checkNumber() ">Check For Age.!!!</button> -->
+    </form>
+    <h2 id="demo "></h2>
+</body>
+
+</html>

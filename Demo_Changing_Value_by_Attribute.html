@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> Javascript HTML DOM </h2>
+    <img id="myImage" src="Images/Gif_Atoms.gif" width="160" height="120">
+    <h1 id="myHeading"> Programming is an Art of Solving problems </h1>
+
+    <script>
+        document.getElementById("myImage").src = "Images/Art_Maths.gif";
+        const element = document.getElementById("myHeading");
+        element.style.color = "Red";
+    </script>
+    <p>here We Can se how My Original Images was Changed by Script....</p>
+</body>
+
+</html>
