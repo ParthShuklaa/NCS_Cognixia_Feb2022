@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        
+        [class *="col-"] {
+            float: left;
+            padding: 15px;
+        }
+        
+        html {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        .header {
+            background-color: #9933cc;
+            color: "#ffffff";
+            padding: 15px;
+        }
+        
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+        
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+        
+        .aside {
+            background-color: #6ca0b8;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+        
+        .footer {
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+        /* for Desktop */
+        /* .col-1 {
+            width: 10%;
+        }
+        
+        /* .col-2 {
+            width: 16%;
+        }
+        
+        .col-3 {
+            width: 25%;
+        }
+        
+        .col-4 {
+            width: 33.3%;
+        } */
+        /* .Col-5 {
+            width: 40%;
+        }
+        
+        .Col-12 {
+            width: 100%;
+        } */
+        
+        */ @media only screen and (max-width:768px) {
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Responsive Designing </h1>
+    <div class="header">
+        <h1>Italy</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li>The City</li>
+                <li>The Food</li>
+                <li>Places</li>
+            </ul>
+        </div>
+
+        <div class="col-6">
+            <h1>The City</h1>
+            <p> Rome, Italian Roma, historic city and capital of Roma provincia (province), of Lazio regione (region), and of the country of Italy. Rome is located in the central portion of the Italian peninsula, on the Tiber River about 15 miles (24 km)
+                inland from the Tyrrhenian Sea. </p>
+        </div>
+        <div class="col-3 right">
+            <div class="aside">
+                <h2>What ?</h2>
+                <p> Rome, Italian Roma, historic city and capital of Roma provincia</p>
+                <h2> Where ?</h2>
+                <p>Rome is located in the central portion of the Italian peninsula, on the Tiber River about 15 miles (24 km) inland from the Tyrrhenian Sea</p>
+                <h2> How ?</h2>
+                <p>You can reach Rome via Aiport from all over globe </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                Resize the browser window to see how the content reposnds to the resizing
+            </p>
+        </div>
+</body>
+
+</html>
