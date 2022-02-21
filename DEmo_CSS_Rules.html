@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Rules</title>
+    <style>
+        body {
+            background-color: lightgreen;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: red;
+            }
+        }
+        
+        .parent {
+            color: brown;
+            background-color: greenyellow;
+            width: 500px;
+            height: 500px;
+        }
+        
+        #a {
+            color: pink;
+            font-style: italic;
+            font-size: medium;
+        }
+        
+        div>.box {
+            font-size: 3em;
+            color: black !important;
+            margin: 10%;
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box" style=color:#04AA6D> I am Box
+
+        </div>
+        <div class="box" id="a"> Wings of Fire is my fav Book </div>
+        <div> Harry Potter is my favourite movie </div>
+
+    </div>
+</body>
+
+</html>
