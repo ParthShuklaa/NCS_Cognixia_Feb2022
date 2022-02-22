@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px;
+            border-style: solid;
+            color: red;
+            border-width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Canvas Demo
+    </h1>
+
+    <canvas id="myCanvas" width: "200" height: "100"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas"); //Find the the Canvas element 
+        var ctx = canvas.getContext("2d"); //Creates aDrawing Object
+
+
+        //Creating Gradient 
+        // var grd = ctx.createLinearGradient(0, 0, 200, 0);
+        var grd = ctx.createLinearGradient(75, 50, 5, 90, 60, 100);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+
+
+        ctx.fillStyle = grd; // Draws on the Canvas
+        ctx.fillRect(10, 10, 150, 100);
+    </script>
+
+
+</body>
+
+</html>
