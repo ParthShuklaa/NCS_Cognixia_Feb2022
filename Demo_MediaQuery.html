@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+
+    <style>
+        body {
+            background-color: tan;
+            color: black;
+        }
+        /* On scrren Size less than 992px color should be blue */
+        
+        @media screen and (max-width: 992px) {
+            body {
+                background-color: rgb(91, 73, 109);
+                color: whitesmoke;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: olive;
+                color: antiquewhite;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Resize the browser window to see the action created by Media Query .... </h1>
+
+    <p> by Default the Background color of the document is "tan"</p>
+    <section>
+        <p>if the Scren Size id less than 992Px or less color will change to blue</p>
+        <p> of the screen Size is less than 600px , so it will change to olive</p>
+    </section>
+</body>
+
+</html>

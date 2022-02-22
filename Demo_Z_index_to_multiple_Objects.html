@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+        }
+        
+        .blackbox {
+            position: relative;
+            /* z-index: 3; */
+            border: 3px solid black;
+            height: 100px;
+            margin: 40Px;
+        }
+        
+        .graybox {
+            position: absolute;
+            /* z-index: 2; */
+            background: lightgray;
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+        }
+        
+        .redbox {
+            position: absolute;
+            /* z-index: 1; */
+            background: rgb(250, 141, 141);
+            width: 55%;
+            left: 270px;
+            top: -15px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Working with Z-Index for multiple Object </h1>
+    <div class="container">
+        <div class="blackbox"> BLACK BOX (Z-Index :1)</div>
+        <div class="graybox"> GRAY BOX (Z-Index: 3)</div>
+        <div class="redbox"> RED BOX (Z-Index 2)</div>
+    </div>
+</body>
+
+</html>
