@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .flex-item-1 {
+            background-color: aliceblue;
+            padding: 10px;
+            flex: 50%;
+        }
+        
+        .flex-item-2 {
+            background-color: dodgerblue;
+            padding: 10px;
+            flex: 50%;
+        }
+        
+        @media (max-width:800px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Responsive Flex Box</h1>
+    <p> here We Are using a Propert ie "flex-direction: row; for stacking element Left to right- Horizontally</p>
+    <p> "flex-direction : column for top to bottom</p>
+    <p> Above Chnages can be made visible when the screen size is less than 800px</p>
+
+    <div class="flex-container">
+        <div class="flex-item-1">One</div>
+        <div class="flex-item-2">Two</div>
+    </div>
+
+
+</body>
+
+</html>

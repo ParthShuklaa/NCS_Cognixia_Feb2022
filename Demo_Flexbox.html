@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            height: 600;
+            display: flex;
+            background-color: dodgerblue;
+            flex-direction: row;
+            align-items: center;
+            align-items: flex-start;
+            flex-wrap: wrap-reverse;
+            flex-flow: row wrap;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        
+        .flex-container>div {
+            background-color: rgb(238, 245, 245);
+            margin: 10px;
+            padding: 20px;
+            font: 30px;
+            font-size: x-large;
+            color: black;
+            border-radius: 20%;
+            border-style: groove;
+            width: 100px;
+            flex-shrink: 1;
+            flex: 0, 0, 150px;
+            /* Shorthand for flex-grow:,flex-shrink: ,flex-basis: ; */
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Creating a Fexible Container</h2>
+    <div class="flex-container">
+        <div style="order: 12;">1</div>
+        <div style="order: 11;">2</div>
+        <div style="flex-grow: 8;">3</div>
+        <div style="flex-shrink:0;">4</div>
+        <div style="flex-basis: 200px;">
+            </style>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+
+
+
+    <p>
+        A Felxible Layout must have a parent element with the <em> display</em> property set to <em> flex</em>
+    </p>
+    <p> Direct Child Elements if the fexible container automatically becomes flexible items
+    </p>
+
+</body>
+
+</html>
