@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: dodgerblue;
+            border-radius: 10px;
+            transition: width 3s, height 3s, transform 2s;
+            transition-timing-function: ease-in;
+        }
+        
+        .mydiv1 {
+            /* background-color: crimson;
+            transition: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 1s; */
+            transition: width 2s linear 1s;
+            /* shorthand notation for implemting transition */
+        }
+        
+        div:hover {
+            width: 400px;
+            height: 400px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1> How to Implement Transition using CSS</h1>
+    <p>
+        Hove over the object below, to see the transition effect:
+    </p>
+    <div></div>
+    <p> Application of Various Transition effect on an object </p>
+    <div class="mydiv1"></div>
+</body>
+
+</html>
